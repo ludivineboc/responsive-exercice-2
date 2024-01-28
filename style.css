@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+:root {
+    --primarycolor: #216155;
+    --secondarycolor: #2D9596;
+    --tertiarycolor: #092635; /* Correction de la variable --tertirycolor à --tertiarycolor */
+    --bg: #EEEEEE;
+}
+
+/* GENERAL */
+
+body {
+    margin: 0;
+    padding: 5% 0 5% 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--secondarycolor);
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--tertiarycolor); 
+}
+
+button {
+    border: none;
+    background-color: var(--secondarycolor);
+    color: white;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 7%;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+/* SECTION */ 
+
+section {
+    padding: 0 25%;
+}
+
+.card {
+    flex-direction: column;
+    width: 45%;
+    background-color: var(--bg);
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardInfos {
+    padding: 5%;
+}
+
+.description {
+    width: 100%;
+}
+
+/* Paramètres pour les écrans avec une largeur inférieure à 576px = smartphone portrait */
+@media screen and (max-width: 575px) {
+   /* body {background-color: pink;} */
+
+    section {
+        padding: 0 5%;
+    }
+
+    .card {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .cardInfos {
+        width: 40%;
+        align-content: space-between;
+    }
+
+    .card img {
+        width: 50%;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .card button {
+        padding: 10px;
+    }
+
+
+}
+
+
+/* Paramètres pour les écrans d'une largeur comprise entre à 577px et 960px = tablette ou smartphone paysage */
+@media screen and (min-width: 576px) and (max-width: 960px) { 
+
+    /*body {background-color: red;}*/
+
+    section {
+        padding: 0 5%;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .cardInfos {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+
+    .card button {
+        padding: 10px 25px;
+    }
+
+}
