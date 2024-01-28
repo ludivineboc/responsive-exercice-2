@@ -111,7 +111,7 @@ section {
 
 
 }
-
+ 
 
 /* Paramètres pour les écrans d'une largeur comprise entre à 577px et 960px = tablette ou smartphone paysage */
 @media screen and (min-width: 576px) and (max-width: 960px) { 
